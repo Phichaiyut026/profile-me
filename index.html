@@ -3,20 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="เว็บไซต์แนะนำตัวและผลงานของนักสร้างสรรค์ดิจิทัล" />
-  <title>สวัสดีครับ — Portfolio ของผม</title>
+  <meta name="description" content="เว็บไซต์แนะนำตัวของนายพิชัยยุทธ วัชโร" />
+  <title>นายพิชัยยุทธ วัชโร — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="กลับไปด้านบน"><span class="brand-mark">P</span><span>portfolio<span class="dot">.</span></span></a>
     <nav class="desktop-nav" aria-label="เมนูหลัก">
       <a href="#about">เกี่ยวกับผม</a>
-      <a href="#timeline">ประสบการณ์</a>
-      <a href="#work">ผลงาน</a>
+      <a href="#timeline">การทำงาน</a>
+      <a href="#education">การศึกษา</a>
+      <a href="#work">กิจกรรม</a>
       <a href="#contact">ติดต่อ</a>
     </nav>
     <a class="button button-small button-dark" href="#contact">ติดต่อผม <span>↗</span></a>
@@ -27,8 +29,9 @@
     <section class="hero section-wrap">
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> ประวัติส่วนตัว</p>
-        <h1>นี่คือเรื่องราว<br /><em>ของผม</em></h1>
-        <p class="hero-text">สวัสดีครับ ผมชื่อ <strong>พีท</strong> — คนธรรมดาที่สนใจงานออกแบบ เทคโนโลยี และการเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ เว็บไซต์นี้รวบรวมเรื่องราว ประสบการณ์ และสิ่งที่เป็นตัวผม</p>
+        <h1>นายพิชัยยุทธ<br /><em>วัชโร</em></h1>
+        <p class="hero-text">สวัสดีครับ ผมชื่อเล่นว่า <strong>อั้ม</strong> อายุ <strong>24 ปี</strong> กำลังศึกษาอยู่ที่ <strong>มหาวิทยาลัยศรีปทุม</strong> และสนใจเทคโนโลยี การพัฒนาซอฟต์แวร์ รวมถึงการเรียนรู้สิ่งใหม่ ๆ อยู่เสมอ</p>
+        <p class="typing-line"><span class="typewriter" data-words="Java Development Engineer|AI Technology Learner|Chinese Speaker|English & Korean Learner"></span><span class="typing-caret"></span></p>
         <div class="hero-actions">
           <a class="button button-primary" href="#timeline">ดูประวัติของผม <span>↓</span></a>
           <a class="text-link" href="#about">รู้จักกันมากขึ้น <span>→</span></a>
@@ -36,38 +39,61 @@
       </div>
       <div class="hero-art" aria-label="ภาพประกอบโปรไฟล์">
         <div class="shape shape-large"></div><div class="shape shape-small"></div>
-        <div class="portrait-card"><div class="portrait-face"><span class="hair"></span><span class="eye eye-left"></span><span class="eye eye-right"></span><span class="smile"></span></div><div class="portrait-body"></div></div>
+        <div class="portrait-card profile-photo-card"><img src="img/ChangZhouStudy/main.PNG" alt="รูปโปรไฟล์นายพิชัยยุทธ วัชโร" /></div>
         <span class="art-note note-top">curious mind <span>✦</span></span><span class="art-note note-bottom">always learning</span>
       </div>
     </section>
 
     <section id="about" class="about section-wrap">
       <div class="section-label">01 / เกี่ยวกับผม</div>
-      <div class="about-content"><h2>คนธรรมดาที่<br /><span>ใส่ใจในรายละเอียด</span></h2><div class="about-description"><p>ผมเชื่อว่างานออกแบบที่ดีไม่จำเป็นต้องซับซ้อน แต่ต้องเข้าใจผู้คน ผมทำงานโดยผสมความคิดสร้างสรรค์เข้ากับการแก้ปัญหา เพื่อสร้างสิ่งที่ทั้งสวยและใช้งานได้จริง</p><p>นอกเวลางาน ผมชอบถ่ายรูป ฟังเพลง และออกไปค้นหากาแฟดี ๆ ในเมือง</p></div></div>
-      <div class="facts"><div><strong>05+</strong><span>ปีประสบการณ์</span></div><div><strong>32</strong><span>โปรเจกต์ที่ส่งมอบ</span></div><div><strong>12</strong><span>แบรนด์ที่ได้ร่วมงาน</span></div></div>
+      <div class="about-content"><h2>คนธรรมดาที่<br /><span>ใส่ใจในรายละเอียด</span></h2><div class="about-description"><p>ผมเป็นคนที่ชอบเรียนรู้สิ่งใหม่ ๆ และสนใจการนำเทคโนโลยีมาช่วยสร้างงานที่มีประโยชน์ ใช้งานง่าย และดูดี</p><p>ผมให้ความสำคัญกับความตั้งใจ ความรับผิดชอบ และการพัฒนาตัวเองอย่างสม่ำเสมอ</p></div></div>
     </section>
 
     <section id="timeline" class="timeline section-wrap">
-      <div class="section-label">02 / เส้นทางของผม</div>
-      <div class="timeline-heading"><h2>ประสบการณ์ที่<br /><span>หล่อหลอมตัวตน</span></h2><p>เส้นทางการทำงานและการเรียนรู้<br />ที่ทำให้ผมเป็นผมในวันนี้</p></div>
+      <div class="section-label">02 / ประวัติการทำงาน</div>
+      <div class="timeline-heading"><h2>ประสบการณ์ทำงาน<br /><span>ในสายซอฟต์แวร์</span></h2><p>ตำแหน่งงานปัจจุบันที่เกี่ยวข้องกับ<br />การพัฒนาโปรแกรมและเทคโนโลยี</p></div>
       <div class="timeline-list">
-        <article class="timeline-item"><div class="timeline-year">2022 — ปัจจุบัน</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">WORK</p><h3>Independent Designer & Developer</h3><p>ทำงานร่วมกับทีมและแบรนด์หลากหลายประเภท ตั้งแต่การวางกลยุทธ์แบรนด์ ออกแบบเว็บไซต์ ไปจนถึงพัฒนาเว็บไซต์ให้ใช้งานจริง</p></div></article>
-        <article class="timeline-item"><div class="timeline-year">2020 — 2022</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">WORK</p><h3>Digital Designer — Studio Noon</h3><p>ออกแบบประสบการณ์ดิจิทัลและแคมเปญออนไลน์ให้กับลูกค้ากลุ่มไลฟ์สไตล์และธุรกิจสร้างสรรค์</p></div></article>
-        <article class="timeline-item"><div class="timeline-year">2016 — 2020</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">EDUCATION</p><h3>B.A. Communication Design</h3><p>ศึกษาด้านการออกแบบนิเทศศิลป์ ฝึกฝนทั้งการคิดเชิงคอนเซปต์ การเล่าเรื่อง และการออกแบบที่มีผู้ใช้งานเป็นศูนย์กลาง</p></div></article>
+        <article class="timeline-item"><div class="timeline-year">ปัจจุบัน</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">WORK</p><h3>Java Development Engineer</h3><p>ทำงานด้านการพัฒนาโปรแกรมด้วยภาษา Java และเทคโนโลยีที่เกี่ยวข้อง</p></div></article>
       </div>
     </section>
 
-    <section id="work" class="work section-wrap"><div class="section-heading"><div class="section-label">03 / สิ่งที่เคยทำ</div><p>โปรเจกต์และสิ่งที่ผมเคยลงมือทำ<br />ระหว่างเส้นทางการเรียนรู้</p></div><div class="project-grid">
-      <a class="project project-orange" href="#contact"><div class="project-top"><span>01 — Branding</span><span>↗</span></div><div class="project-visual visual-flower"><span>good<br /><i>mood</i></span><div class="flower">✹</div></div><h3>Good Mood Studio</h3><p>Brand identity · Art direction</p></a>
-      <a class="project project-lilac" href="#contact"><div class="project-top"><span>02 — Digital product</span><span>↗</span></div><div class="project-visual visual-phone"><div class="phone"><div class="phone-screen"><small>your daily</small><b>focus.</b><span>◒</span></div></div></div><h3>Focus — แอปจัดการเวลา</h3><p>UX/UI design · Development</p></a>
-      <a class="project project-blue" href="#contact"><div class="project-top"><span>03 — Campaign</span><span>↗</span></div><div class="project-visual visual-posters"><span>MAKE<br /><b>SPACE</b></span><div class="sun">☼</div></div><h3>Make Space Campaign</h3><p>Concept · Social campaign</p></a>
+    <section id="education" class="timeline section-wrap">
+      <div class="section-label">03 / ประวัติการศึกษา</div>
+      <div class="timeline-heading"><h2>เส้นทางการศึกษา<br /><span>ด้านคอมพิวเตอร์และซอฟต์แวร์</span></h2><p>พื้นฐานการเรียนรู้ที่ช่วยต่อยอด<br />สู่การทำงานด้านพัฒนาซอฟต์แวร์</p></div>
+      <div class="timeline-list">
+        <article class="timeline-item"><div class="timeline-year">ปัจจุบัน</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">UNIVERSITY</p><h3>มหาวิทยาลัยศรีปทุม</h3><p>กำลังศึกษาอยู่ในปัจจุบัน</p></div></article>
+        <article class="timeline-item"><div class="timeline-year">สำเร็จการศึกษา 2566</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">DIPLOMA</p><h3>อนุปริญญา — Changzhou College of Information Technology</h3><p>สาขา 软件技术 (Software Technology)</p></div></article>
+        <article class="timeline-item"><div class="timeline-year">สำเร็จการศึกษา 2566</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">HIGH VOCATIONAL CERTIFICATE</p><h3>ปวส. — Chonburi Technological College</h3><p>สาขานักพัฒนาซอฟต์แวร์</p></div></article>
+        <article class="timeline-item"><div class="timeline-year">สำเร็จการศึกษา 2563</div><div class="timeline-dot"></div><div class="timeline-detail"><p class="timeline-type">VOCATIONAL CERTIFICATE</p><h3>ปวช. — วิทยาลัยเทคนิคชลบุรี</h3><p>สาขาเทคนิคคอมพิวเตอร์</p></div></article>
+      </div>
+    </section>
+
+    <section id="work" class="work section-wrap"><div class="section-heading"><div class="section-label">04 / กิจกรรมและประสบการณ์</div><p>ภาพความทรงจำจากการไปเรียน<br />และใช้ชีวิตที่ Changzhou</p></div><div class="project-grid project-grid-single">
+      <a class="project project-study" href="#contact"><div class="project-top"><span>01 — Study Abroad</span><span>↗</span></div><div class="project-visual visual-memory memory-gallery">
+        <img src="img/ChangZhouStudy/IMG_1662.jpg" alt="ภาพจาก Changzhou College of Information Technology" />
+        <img src="img/ChangZhouStudy/IMG_8655.jpg" alt="ภาพบรรยากาศจาก Changzhou" />
+        <img src="img/ChangZhouStudy/IMG_4154.JPG" alt="ภาพกิจกรรมระหว่างเรียนที่ Changzhou" />
+        <img src="img/ChangZhouStudy/IMG_3815.JPG" alt="ภาพความทรงจำที่ Changzhou" />
+        <img src="img/ChangZhouStudy/IMG_4167.JPG" alt="ภาพบรรยากาศการเรียนที่ Changzhou" />
+        <img src="img/ChangZhouStudy/435962015_1515728309368468_4717995010604927155_n.JPG" alt="ภาพประสบการณ์เรียนที่ประเทศจีน" />
+      </div><h3>ประสบการณ์เรียนที่ Changzhou</h3><p>ภาพความทรงจำจากการศึกษาในสาขา Software Technology ที่ประเทศจีน</p></a>
     </div></section>
 
-    <section class="services section-wrap"><div class="section-label">03 / ความสนใจและทักษะ</div><div class="service-list"><div><span>01</span><h3>การออกแบบ</h3><p>สนใจการสื่อสารด้วยภาพ ตัวอักษร และรายละเอียดเล็ก ๆ ที่ทำให้สิ่งต่าง ๆ ชัดเจนขึ้น</p></div><div><span>02</span><h3>เทคโนโลยี</h3><p>ชอบทดลองเครื่องมือใหม่ ๆ และเรียนรู้วิธีสร้างสิ่งที่ใช้งานง่ายด้วยตัวเอง</p></div><div><span>03</span><h3>การเรียนรู้</h3><p>เชื่อว่าทุกประสบการณ์มีอะไรให้เรียนรู้ และพยายามพัฒนาตัวเองอย่างสม่ำเสมอ</p></div></div></section>
+    <section class="services section-wrap"><div class="section-label">05 / ความสนใจและทักษะ</div><div class="service-list"><div><span>01</span><h3>เทคโนโลยี AI</h3><p>สนใจเทคโนโลยี AI และการนำเครื่องมือใหม่ ๆ มาช่วยพัฒนางานให้มีประสิทธิภาพมากขึ้น</p></div><div><span>02</span><h3>ภาษาจีน</h3><p>สามารถสื่อสารภาษาจีนได้ และสนใจการใช้ภาษาเพื่อเปิดมุมมองใหม่ในการเรียนรู้และทำงาน</p></div><div><span>03</span><h3>ภาษาอังกฤษและเกาหลี</h3><p>ชอบเรียนภาษาเป็นงานอดิเรก ปัจจุบันกำลังเรียนภาษาอังกฤษและภาษาเกาหลีเพิ่มเติม</p></div></div></section>
 
-    <section id="contact" class="contact section-wrap"><div class="contact-card"><p class="eyebrow">ช่องทางติดต่อ</p><h2>อยากรู้จักกัน<br /><em>ทักมาได้เลย</em></h2><a class="button button-light" href="mailto:hello@example.com">hello@example.com <span>↗</span></a><div class="contact-footer"><span>Bangkok, Thailand</span><div><a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">Behance</a></div></div></div></section>
+    <section id="contact" class="contact section-wrap"><div class="contact-card"><p class="eyebrow">ช่องทางติดต่อ</p><h2>อยากรู้จักกัน<br /><em>ทักมาได้เลย</em></h2><a class="button button-light" href="mailto:sinaumza2545@gmail.com">sinaumza2545@gmail.com <span>↗</span></a><div class="contact-footer"><span>Bangkok, Thailand</span><div><a href="tel:0929686030">092-968-6030</a><a href="mailto:sinaumza2545@gmail.com">Email</a></div></div></div></section>
   </main>
-  <footer><span>© 2024 Pete. Made with intention.</span><a href="#top">กลับขึ้นด้านบน ↑</a></footer>
+  <footer><span>© 2024 นายพิชัยยุทธ วัชโร. Made with intention.</span><a href="#top">กลับขึ้นด้านบน ↑</a></footer>
+  <button class="back-to-top" type="button" aria-label="กลับขึ้นด้านบน">↑</button>
+  <div class="image-lightbox" aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="ปิดรูป">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="รูปก่อนหน้า">‹</button>
+    <figure class="lightbox-frame">
+      <img src="" alt="" />
+      <figcaption></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="รูปถัดไป">›</button>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
