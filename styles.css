@@ -57,3 +57,4 @@ body.lightbox-open{overflow:hidden}
 @keyframes dot-pulse{0%,100%{box-shadow:0 0 0 6px var(--cream)}50%{box-shadow:0 0 0 10px rgba(255,112,77,.18)}}
 @media(max-width:760px){.typing-line{font-size:14px}.back-to-top{right:16px;bottom:16px;width:42px;height:42px}.service-list>div:hover{padding-left:0}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal-item{opacity:1;transform:none}}
+@font-face{font-family:'Itim';src:url('./Itim-Regular.ttf') format('truetype');font-style:normal;font-weight:400;font-display:swap}body,body *{font-family:'Itim',sans-serif!important}
